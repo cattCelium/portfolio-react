@@ -1,0 +1,50 @@
+table{
+    border-spacing: 1px;
+    font-size: 24px;
+    font-weight: 600;
+    color:var(--mid-gray-color);
+    line-height: 37px;
+    width: 100%;
+    
+}
+
+progress {
+    appearance: none;
+    margin-left: 112px;
+}
+
+  ::-webkit-progress-value{
+    background-color:var(--blue-color);
+  }
+
+
+  ::-webkit-progress-bar {
+    margin-top: 9px;
+    height: 10px;
+    background-color: var(--light-gray-color);
+  }
+
+  /* *********DISPLAY LAYOUT********* */
+
+
+@media screen and (min-width: 800px){
+    .skills{
+        width: 865px;
+        grid-area: skills;
+    }
+
+    .skills__progress__tx{
+        width: 124px;
+    }
+
+    progress {
+        margin-left: 0px;
+    }
+
+   .skills__progressFrame{
+        display: flex;
+        padding-right: 16px;
+        padding-left: 16px;
+        gap: 32px;
+    }
+}
